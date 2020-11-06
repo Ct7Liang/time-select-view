@@ -1,0 +1,37 @@
+.selected-body{
+  position: fixed; top: 0rpx; bottom: 0rpx; left: 0rpx; right: 0rpx; z-index: 500;
+  display: flex; flex-direction: column;
+}
+
+.inner-view{
+  position: absolute; width: 100%; height: 100%;
+}
+
+.bg{
+  width: 100%; height: calc(100vh - 580rpx);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.options{
+  background-color: #FFFFFF;
+  height: 80rpx; width: 100%;
+  font-size: 28rpx;
+  border-bottom: 1px solid #F8F8F8;
+}
+
+.option{
+  padding-left: 30rpx; padding-right: 30rpx; text-align: center; line-height: 80rpx; 
+}
+
+.pv{
+  height: 500rpx; width: 100%; 
+  background-color: #FFFFFF;
+}
+
+picker-view-column{
+  width: 20%; text-align: center; line-height: 70rpx; font-size: 28rpx;
+}
+
+.cv{
+  overflow-y: scroll;
+}

@@ -1,0 +1,38 @@
+<view class="selected-body" wx:if="{{isShow}}">
+
+  <view class="inner-view">
+  
+    <cover-view class="bg"></cover-view>
+
+    <cover-view class="options">
+      <cover-view class="option" style="float: left; color: #555555;" bindtap="hide">取消</cover-view>
+      <cover-view class="option" style="float: right; color: #4A77B0;" bindtap="commit">确定</cover-view>
+    </cover-view>
+
+    <picker-view class="pv" indicator-style="height: 70rpx;" value="{{currentValue}}" bindchange="bindChange">
+
+      <picker-view-column>
+        <view wx:for="{{years}}">{{item}}年</view>
+      </picker-view-column>
+
+      <picker-view-column>
+        <view wx:for="{{months}}">{{item}}月</view>
+      </picker-view-column>
+
+      <picker-view-column>
+        <view wx:for="{{days}}">{{item}}日</view>
+      </picker-view-column>
+
+      <picker-view-column>
+        <view wx:for="{{hours}}">{{item}}时</view>
+      </picker-view-column>
+
+      <picker-view-column>
+        <view wx:for="{{minutes}}">{{item}}分</view>
+      </picker-view-column>
+
+    </picker-view>
+  
+  </view>
+
+</view>
